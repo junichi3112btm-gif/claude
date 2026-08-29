@@ -12,10 +12,18 @@ targets:
     recompute: true
     gate: true
     note: D-Global 検討資料 対外第1.0版
+  - doc: dglobal/TIB_DEMODAY_デザイン版_是正済_20260829.pptx
+    profile: deck_design
+    gate: true
+    note: TIB デッキ（デザイン正本系統・登壇 2026/09/06）
+  - doc: dglobal/TIB_登壇原稿_是正版_20260829.md
+    profile: deck_design
+    gate: true
+    note: TIB 登壇原稿（是正版）
   - doc: dglobal/PhaseShift_TIB_DEMODAY_20260906_rev3.pptx
     profile: deck
-    gate: true
-    note: TIB DEMO DAY デッキ rev3（登壇 2026/09/06）
+    gate: false
+    note: 旧系統（HTML再構成版）。デザイン正本の特定により廃止扱い。是正内容のドナーとして保持
   - doc: dglobal/SUPERSEDED_DGlobal_事業化推進機関_検討版_正本_v1_2.md
     profile: internal
     gate: false
@@ -269,6 +277,28 @@ profiles:
         why: Plan A の2変数ゲート（マスター §2.5 判定規律との整合・rev3）
       - term: TDS 10万mg/L超
         why: 海外展開の未解決課題の開示（CSO 軽微・rev3）
+
+  deck_design:
+    description: TIB デザイン版デッキ・登壇原稿（8/24 Google スライド系統。公開の場・禁止語のみで判定）
+    forbidden:
+      - term: 伊勢化学
+        why: 公開の場での実名不可
+      - term: Oエナジー
+        why: 同上（K&O の表記ゆれを拾う）
+      - term: 大網白里
+        why: 拠点名は相手先を特定する
+      - term: 千葉県産技研
+        why: 測定機関名は出さない
+      - term: 世界で我々しか
+        why: 世界初系の断定
+      - term: 操業リスクゼロ
+        why: 未検証の断定。「操業を止めない設計」へ
+      - term: 2,058万円
+        why: グロス化前の旧値。現行 3,436.9万円
+      - term: 実廃水検証稼働中
+        why: サンプル未受領。事実に反する
+      - term: 独占取得
+        why: 市場文脈の独占表現
 
   internal:
     description: 内部正本（内部メタデータは許容し、事実誤りと用語規律のみを見る）

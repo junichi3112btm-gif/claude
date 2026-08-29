@@ -48,7 +48,8 @@
 | 執行計画書 | Google Drive | 第1.5版（2026/08/19） |
 | D-Global 検討資料（内部） | Google Drive | 第1.5版 |
 | D-Global 検討資料（対外） | `dglobal/DGlobal_事業化推進機関_ご検討資料_v1_0_20260828.md` | 第1.0版 |
-| TIB DEMO DAY デッキ | `dglobal/PhaseShift_TIB_DEMODAY_20260906_rev3.pptx` | rev3（8枚・2026/08/29） |
+| TIB DEMO DAY デッキ | **Google スライド（8/24・デザイン正本）** fileId `1DZwqzqK…` | 是正9件は `dglobal/TIB_DEMODAY_デザイン版_是正済_20260829.pptx` に適用済み。スライド本体は要手修正（特定記録の対応表） |
+| TIB 登壇原稿 | `dglobal/TIB_登壇原稿_是正版_20260829.md`（元は Google Docs 8/24） | 是正13箇所 |
 
 **すべての数値は事業計画書 第1.9版に準拠する。** 第1.9版と矛盾する値を他文書に書かない。
 
@@ -278,6 +279,7 @@ TOEIC 等の個人スコアは書かない。
 | `dglobal/第1.8版_宿題16_起票.md` | 宿題起票と判断保留の見本 |
 | `dglobal/TIB_9_6_修正記録.md` | pptx 修正17件の記録（rev1） |
 | `dglobal/TIB_rev2_修正記録.md` | pptx 修正19件の記録（rev2・CSO検閲反映） |
+| `dglobal/TIB_デザイン正本_特定記録_20260829.md` | デッキ系統の取り違えの発見と是正。**旧 rev1〜3 は廃止扱い** |
 | `dglobal/マスター第1.8版_照合記録_20260829.md` | 正本との直接照合。分岐の発見記録 |
 | `dglobal/第1.9版_改訂起票_20260829.md` | マスターへの未反映分の改訂案（承認待ち） |
 | `dglobal/TIB_slide3_波及漏れ_起票.md` | 顧客P/L グロス化の未反映（🔴 登壇9/6） |
