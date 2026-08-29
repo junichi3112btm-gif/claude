@@ -48,7 +48,7 @@
 | 執行計画書 | Google Drive | 第1.5版（2026/08/19） |
 | D-Global 検討資料（内部） | Google Drive | 第1.5版 |
 | D-Global 検討資料（対外） | `dglobal/DGlobal_事業化推進機関_ご検討資料_v1_0_20260828.md` | 第1.0版 |
-| TIB DEMO DAY デッキ | `dglobal/PhaseShift_TIB_DEMODAY_20260906_rev2.pptx` | rev2（8枚・2026/08/29） |
+| TIB DEMO DAY デッキ | `dglobal/PhaseShift_TIB_DEMODAY_20260906_rev3.pptx` | rev3（8枚・2026/08/29） |
 
 **すべての数値は事業計画書 第1.9版に準拠する。** 第1.9版と矛盾する値を他文書に書かない。
 
