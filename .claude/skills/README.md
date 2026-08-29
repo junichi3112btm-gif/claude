@@ -4,7 +4,7 @@
 
 | スキル | 用途 |
 | :-- | :-- |
-| `doc-critique` | 資料を第1級／第2級／第3級に分級して批評する |
+| `doc-critique` | CSO としてレッドチーム検証し、5基準で走査・分級して PASS/REVISE/BLOCK を判定する |
 | `external-version` | 内部正本から対外版を生成し、検証4層をかける |
 | `number-propagation` | 数値を1つ変更したとき、波及先を数値台帳から全走査する |
 | `notes-to-onepager` | 雑然としたメモを1ページまとめに変換する |
