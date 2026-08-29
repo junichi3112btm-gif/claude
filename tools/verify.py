@@ -107,6 +107,10 @@ def _load_pptx(path: Path) -> list[Segment]:
 
         slides = sorted((n for n in names if re.match(r"ppt/slides/slide\d+\.xml$", n)), key=_num)
         notes = sorted((n for n in names if re.match(r"ppt/notesSlides/notesSlide\d+\.xml$", n)), key=_num)
+        # スライドマスター・レイアウトも走査する。フッター等に実名・旧値が残りうる
+        # （2026/08/29 の照合で走査対象外だったことが判明した欠落）
+        masters = sorted((n for n in names
+                          if re.match(r"ppt/(slideMasters|slideLayouts|notesMasters)/\w+\d+\.xml$", n)))
         for group, kind in ((slides, "slide"), (notes, "notes")):
             for name in group:
                 xml = z.read(name).decode("utf-8", errors="replace")
@@ -115,6 +119,20 @@ def _load_pptx(path: Path) -> list[Segment]:
                 body = (body.replace("&amp;", "&").replace("&lt;", "<")
                             .replace("&gt;", ">").replace("&quot;", '"').replace("&apos;", "'"))
                 segments.append(Segment(f"{kind}{_num(name)}", body))
+        for name in masters:
+            xml = z.read(name).decode("utf-8", errors="replace")
+            body = "".join(re.findall(r"<a:t>(.*?)</a:t>", xml, re.DOTALL))
+            if body.strip():
+                segments.append(Segment(name.split("/")[-1].replace(".xml", ""), body))
+        # 文書プロパティ（title/author/lastModifiedBy 等）。ツール既定値や実名の漏れを拾う
+        props = []
+        for name in ("docProps/core.xml", "docProps/app.xml"):
+            if name in names:
+                xml = z.read(name).decode("utf-8", errors="replace")
+                props += re.findall(r"<(?:dc:title|dc:creator|dc:subject|cp:keywords|"
+                                    r"cp:lastModifiedBy|Company|Manager)[^>]*>(.*?)</", xml, re.DOTALL)
+        if any(s.strip() for s in props):
+            segments.append(Segment("docProps", " ".join(props)))
     return segments
 
 
