@@ -14,12 +14,21 @@
 ### 使い方
 
 ```bash
+python3 tools/verify.py --all                                  # 完了判定（これが本命）
 python3 tools/verify.py --list-profiles
 python3 tools/verify.py --doc dglobal/対外版.md   --profile external --recompute
 python3 tools/verify.py --doc dglobal/deck.pptx  --profile deck -v
 ```
 
 終了コード 0＝合格 / 1＝不合格。
+
+### `--all` ── 完了判定
+
+`verify_rules.yaml` の `targets` に登録した全成果物を走査し、合否ボードを出す。
+
+**「直した」は完了ではない。`--all` が不合格0を返したときが完了。**
+`gate: true` の対外提示物が1件でも不合格なら、全体が未完了になる。
+`gate: false`（廃止扱いの正本など）は参考表示で、判定に影響しない。
 
 ### 対応形式
 

@@ -100,6 +100,14 @@ python3 tools/verify.py --doc <対外版> --profile external --recompute
   creator／producer にパス情報の漏れがないか
 - 埋め込みファイル・注釈・しおりの有無、暗号化の有無
 
+### 完了判定
+
+```bash
+python3 tools/verify.py --all
+```
+
+**対外提示物が不合格0を返すまで「送付可」と書かない。**
+
 ### 検証記録のフォーマット
 
 ```

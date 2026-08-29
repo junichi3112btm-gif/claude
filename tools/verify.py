@@ -334,6 +334,69 @@ def report(doc: Document, findings: list[Finding], verbose: bool) -> int:
 
 # ────────────────────────────────────────────────────────────
 
+def run_one(path: Path, profile: str, rules_doc: dict, recompute: bool,
+            verbose: bool) -> tuple[int, int, int]:
+    """1件を検証し、(合格, 警告, 不合格) を返す。"""
+    prof = rules_doc["profiles"][profile]
+    common = rules_doc.get("common", {})
+
+    def merged(key: str) -> list:
+        return list(common.get(key, []) or []) + list(prof.get(key, []) or [])
+
+    forbidden, required, numbers = merged("forbidden"), merged("required"), merged("numbers")
+    doc = load_document(path, bool(prof.get("skip_html_comments", False)))
+
+    findings: list[Finding] = []
+    findings += check_forbidden(doc, forbidden)
+    findings += check_required(doc, required)
+    if recompute and numbers:
+        findings += check_numbers(doc, numbers)
+    findings += check_short_terms(doc, [forbidden, required])
+
+    ng = sum(1 for f in findings if f.level == "NG")
+    warn = sum(1 for f in findings if f.level == "WARN")
+    ok = sum(1 for f in findings if f.level == "OK")
+    if verbose:
+        report(doc, findings, False)
+    return ok, warn, ng
+
+
+def run_all(rules_doc: dict, verbose: bool) -> int:
+    """全成果物の合否ボードを出す。完了判定はこれで行う。"""
+    targets = rules_doc.get("targets") or []
+    if not targets:
+        sys.exit("ルールファイルに targets が定義されていない。")
+
+    print("\n完了判定ボード ── 「直した」ではなく「不合格0」が完了の定義")
+    print("=" * 74)
+    rows, gate_ng = [], 0
+    for tgt in targets:
+        path = ROOT / tgt["doc"]
+        if not path.exists():
+            rows.append(("?", tgt.get("note", tgt["doc"]), "ファイルが無い", tgt.get("gate", True)))
+            continue
+        ok, warn, ng = run_one(path, tgt["profile"], rules_doc,
+                               bool(tgt.get("recompute")), verbose)
+        gate = bool(tgt.get("gate", True))
+        if ng and gate:
+            gate_ng += 1
+        mark = "✅" if ng == 0 else ("❌" if gate else "▲")
+        rows.append((mark, tgt.get("note", tgt["doc"]),
+                     f"合格{ok} 警告{warn} 不合格{ng}", gate))
+
+    for mark, note, res, gate in rows:
+        suffix = "" if gate else "（参考・判定に影響しない）"
+        print(f"  {mark}  {note}")
+        print(f"      {res}{suffix}")
+
+    print("=" * 74)
+    if gate_ng:
+        print(f"\n判定: 未完了。対外提示物 {gate_ng} 件が不合格。")
+        return 1
+    print("\n判定: 完了。対外提示物はすべて不合格0。")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="対外文書の送付前検証（日本語照合の3原則を実装）")
     ap.add_argument("--doc", type=Path, help="検証対象（.md / .txt / .pptx / .pdf）")
@@ -341,6 +404,8 @@ def main() -> int:
     ap.add_argument("--profile", default="external", help="適用するプロファイル名")
     ap.add_argument("--recompute", action="store_true", help="数値の算式を再計算して照合する")
     ap.add_argument("--list-profiles", action="store_true", help="プロファイル一覧を表示して終了")
+    ap.add_argument("--all", action="store_true",
+                    help="targets の全成果物を検証し、完了判定ボードを出す")
     ap.add_argument("-v", "--verbose", action="store_true", help="合格項目も表示する")
     args = ap.parse_args()
 
@@ -352,8 +417,11 @@ def main() -> int:
             print(f"{name:12s} {p.get('description', '')}")
         return 0
 
+    if args.all:
+        return run_all(rules_doc, args.verbose)
+
     if not args.doc:
-        ap.error("--doc を指定してください")
+        ap.error("--doc を指定してください（一括判定は --all）")
     if args.profile not in profiles:
         sys.exit(f"プロファイル '{args.profile}' が無い。--list-profiles で確認できる。")
 

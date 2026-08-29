@@ -1,3 +1,26 @@
+# 完了判定の対象
+#
+# `python3 tools/verify.py --all` が下の全件を走査し、成果物ごとの合否ボードを出す。
+# 「直した」ではなく「不合格0を返した」が完了の定義（meta/Claudeの使い方_分析_第2回_20260829.md）。
+#
+# gate: true  … 対外提示物。1件でも不合格なら全体を不合格とする
+# gate: false … 参考照合。不合格でも全体の判定には影響しない（廃止扱いの正本など）
+
+targets:
+  - doc: dglobal/DGlobal_事業化推進機関_ご検討資料_v1_0_20260828.md
+    profile: external
+    recompute: true
+    gate: true
+    note: D-Global 検討資料 対外第1.0版
+  - doc: dglobal/PhaseShift_TIB_DEMODAY_20260906_rev1.pptx
+    profile: deck
+    gate: true
+    note: TIB DEMO DAY デッキ（登壇 2026/09/06）
+  - doc: dglobal/SUPERSEDED_DGlobal_事業化推進機関_検討版_正本_v1_2.md
+    profile: internal
+    gate: false
+    note: 廃止扱い。是正項目2・5〜8を含まないため不合格が正常
+
 # 送付前検証のルール
 #
 # forbidden : 残存してはならない語。1件でも出れば不合格。

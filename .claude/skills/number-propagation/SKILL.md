@@ -68,7 +68,16 @@ python3 tools/verify.py --doc <対象> --profile <profile> --recompute
 旧値を `verify_rules.yaml` の **`forbidden` に、新値を `required` に登録してから**回す。
 これで以後、旧値の残存が自動で検出される。
 
-### 7. 台帳を更新する
+### 7. 完了判定
+
+```bash
+python3 tools/verify.py --all
+```
+
+**対外提示物が不合格0になるまで完了ではない。** 個別の `--doc` が通っても、
+他文書に同じ数値が残っていれば `--all` が落ちる。
+
+### 8. 台帳を更新する
 
 該当行の値・算式・確度・依存箇所を書き換える。**依存箇所の列を更新し忘れない。**
 
