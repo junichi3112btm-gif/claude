@@ -28,7 +28,7 @@
 | 執行計画書 | Google Drive | 第1.5版（2026/08/19） |
 | D-Global 検討資料（内部） | Google Drive | 第1.5版 |
 | D-Global 検討資料（対外） | `dglobal/DGlobal_事業化推進機関_ご検討資料_v1_0_20260828.md` | 第1.0版 |
-| TIB DEMO DAY デッキ | `dglobal/PhaseShift_TIB_DEMODAY_20260906_rev1.pptx` | rev1（8枚） |
+| TIB DEMO DAY デッキ | `dglobal/PhaseShift_TIB_DEMODAY_20260906_rev2.pptx` | rev2（8枚・2026/08/29） |
 
 **すべての数値は事業計画書 第1.8版に準拠する。** 第1.8版と矛盾する値を他文書に書かない。
 
@@ -224,6 +224,7 @@ TOEIC 等の個人スコアは書かない。
 
 - **LibreOffice は pptx を変換できない。** 原本も python-pptx が生成した最小テストファイルも
   同じく `Error: source file could not be loaded` になる。環境側の制約。
+  **pptx スキルのサンドボックス用ラッパー（soffice.py）でも同一エラーを確認済み**（2026/08/29）。
   **pptx→PDF と目視 QA はこのサンドボックスで実行できない。**
   デッキ作業に着手する前に、PDF 化は手元で行っていただく前提で計画すること。
 - pptx の編集自体は可能（XML 直接編集＋python-pptx での読み込み確認、
@@ -243,7 +244,8 @@ TOEIC 等の個人スコアは書かない。
 | `dglobal/対外版v1_0_送付前検証記録.md` | 検証4層の実施例 |
 | `dglobal/v1_3_批評_20260828.md` | 分級批評の見本 |
 | `dglobal/第1.8版_宿題16_起票.md` | 宿題起票と判断保留の見本 |
-| `dglobal/TIB_9_6_修正記録.md` | pptx 修正17件の記録 |
+| `dglobal/TIB_9_6_修正記録.md` | pptx 修正17件の記録（rev1） |
+| `dglobal/TIB_rev2_修正記録.md` | pptx 修正19件の記録（rev2・CSO検閲反映） |
 | `dglobal/TIB_slide3_波及漏れ_起票.md` | 顧客P/L グロス化の未反映（🔴 登壇9/6） |
 | `tools/verify.py` | 検証スクリプト |
 | `.claude/skills/` | 批評／対外版生成／数値波及／メモ整形 |

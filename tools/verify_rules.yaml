@@ -12,10 +12,10 @@ targets:
     recompute: true
     gate: true
     note: D-Global 検討資料 対外第1.0版
-  - doc: dglobal/PhaseShift_TIB_DEMODAY_20260906_rev1.pptx
+  - doc: dglobal/PhaseShift_TIB_DEMODAY_20260906_rev2.pptx
     profile: deck
     gate: true
-    note: TIB DEMO DAY デッキ（登壇 2026/09/06）
+    note: TIB DEMO DAY デッキ rev2（登壇 2026/09/06）
   - doc: dglobal/SUPERSEDED_DGlobal_事業化推進機関_検討版_正本_v1_2.md
     profile: internal
     gate: false
@@ -207,6 +207,15 @@ profiles:
         why: 断定。廃熱の熱量成立性は本課題の未解決項目。「低品位廃熱の活用を設計目標とする」へ
       - term: 溶媒フリー
         why: 断定。「薬剤・溶媒を使わない設計」へ
+      # CSO 検閲（2026/08/29）第1級①③・第2級⑦⑨
+      - term: 消耗品コストと環境負荷最小
+        why: 正本 §2.3 の不利データ（ポリマー損失率 約30%）と反対の主張
+      - term: 82〜118億円
+        why: 市場規模にグロス単価を適用した旧値。A・B はネット基準（60〜86億円）
+      - term: 技術検証中
+        why: B社は三者間NDA未締結・初回協議のみ。「実廃水サンプル提供合意」が事実
+      - term: 4大工学アナロジー】 🟦
+        why: FACT バッジが未実証の類推まで覆う旧表記
       # 顧客P/L のグロス化（2026/08/28 是正項目3）がデッキへ未反映。slide3 に旧値が残っている
       - term: 2,058万円
         why: グロス化前の顧客純増粗利。現行は 3,436.9万円
@@ -232,7 +241,15 @@ profiles:
       - term: 67.6%
         why: 顧客粗利率（グロス基準）。slide3 へ未反映
       - term: "2.33年"
-        why: 顧客の投資回収期間（グロス基準）。slide3 へ未反映
+        why: 顧客の投資回収期間（グロス基準）
+      - term: 回収損失 約30%
+        why: 正本 §2.3 の不利データの開示（CSO ①）
+      - term: 60〜86億円
+        why: 市場規模のネット基準（CSO ③）
+      - term: 79.4%
+        why: TRL4 判定指標 R の現時点の実測値の開示（CSO ④）
+      - term: 当社推計
+        why: 未回収量は 9/4 ヨウ素学会で一次確認予定。それまで推計と明示（CSO ⑧）
 
   internal:
     description: 内部正本（内部メタデータは許容し、事実誤りと用語規律のみを見る）
