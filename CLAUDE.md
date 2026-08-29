@@ -8,6 +8,8 @@
 ## 0. セッション開始時の定例確認（毎回・作業の前に）
 
 `.claude/settings.json` の SessionStart フックがこの節を毎セッション想起させる。
+他の環境（Cowork・claude.ai チャット・他リポジトリ）ではアカウントスキル `checkin` が同じ手順を担う
+（正本：`.claude/skills/checkin/SKILL.md`）。
 
 1. **Drive**：`list_recent_files` でマスター正本（事業計画書・執行計画書・検討資料）の
    版と最終更新を確認する。新しい一次資料フォルダ・改訂があれば先に読む。
