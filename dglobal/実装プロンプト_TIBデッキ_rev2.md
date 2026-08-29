@@ -1,5 +1,9 @@
 # 実装プロンプト｜TIB DEMO DAY デッキ rev1 → rev2（登壇 2026/09/06）
 
+> ✅ **適用済（2026/08/29）。** Task 1〜3 に CSO検閲 ①③④⑦⑧⑨ を加えた19件を適用し
+> `PhaseShift_TIB_DEMODAY_20260906_rev2.pptx` として出力。記録は `TIB_rev2_修正記録.md`。
+> 本ファイルは履歴として保持。未了は PDF化・目視QA（加藤）と §6 の要確認3点。
+
 ## 0. 実行者の役割と制約
 
 あなたは PhaseShift Technologies の実務担当者です。
