@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"【定例確認（CLAUDE.md §0）】作業に入る前に必ず実行する: (1) Drive の list_recent_files でマスター正本（事業計画書・執行計画書・検討資料）の版と更新を確認し、新規の一次資料フォルダを見る。(2) Gmail search_threads newer_than:3d で事実状態を変えるメール（K&O 三者間NDA修正版・伊勢化学サンプル・JST/ツクリエ・千葉県/CIC・ヨウ素学会）を確認する。(3) 変化があれば CLAUDE.md §5.3 の事実表と meta/数値台帳.md を先に更新してから本作業に入る。確認結果は1〜3行で報告する。\"}}'",
+            "timeout": 10,
+            "statusMessage": "定例確認リマインダーを注入中"
+          }
+        ]
+      }
+    ]
+  }
+}
