@@ -28,6 +28,14 @@ targets:
     profile: internal
     gate: false
     note: 廃止扱い。是正項目2・5〜8を含まないため不合格が正常
+  - doc: dglobal/伊勢化学_白里工場見学_チェックリスト_20260901.md
+    profile: internal_field
+    gate: true
+    note: 白里工場見学 現場携帯チェックリスト（2026/09/01・社内限。実名は NDA 相手先本人に提示する内部文書のため許容）
+  - doc: dglobal/伊勢化学_白里工場見学_質問リスト_20260901.md
+    profile: internal_field
+    gate: true
+    note: 白里工場見学 質問リスト（2026/09/01・社内限。チェックリストの対）
 
 # 送付前検証のルール
 #
@@ -89,6 +97,8 @@ common:
       why: 断定を避け「薬剤・溶媒を使わない設計」とする
     - term: 競合不在
       why: 「当該濃度域での実証データは双方とも未公開」とする
+    - term: 売上連動
+      why: 「回収量連動プロセス利用料」とする（2026/08/28 是正。9/1 見学チェックリスト草稿で再発したため common へ昇格）
 
 profiles:
 
@@ -301,6 +311,15 @@ profiles:
         why: サンプル未受領。事実に反する
       - term: 独占取得
         why: 市場文脈の独占表現
+
+  internal_field:
+    description: 現場携帯用・社内限文書（NDA相手先本人へ提示しうる内部文書。実名は許容し、共通禁止語＋用語是正の維持のみを見る）
+    skip_html_comments: true
+    required:
+      - term: 回収量連動プロセス利用料
+        why: 第3層の正式表記（「売上連動報酬」からの是正の維持）
+      - term: 当日署名・提出する誓約書
+        why: 事実是正の維持。誓約書は当日対応（8/19 メール）であり「提出済」ではない
 
   internal:
     description: 内部正本（内部メタデータは許容し、事実誤りと用語規律のみを見る）
