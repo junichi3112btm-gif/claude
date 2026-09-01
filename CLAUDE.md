@@ -88,7 +88,8 @@ Drive のマスター正本と直接突き合わせる。** 2026/08/29、派生�
 **このリポジトリ・Cowork・claude.ai チャットを問わず、新規に作成した成果物・記録・下書きは、
 同じターンのうちに Google Drive へも保存する。** ローカル／Git だけに置いて終えない。
 
-- 保存先：関連する一次資料フォルダがあればそこ（例：NITE 関連は「NITE」フォルダ）。無ければマイドライブ直下。
+- 保存先：マイドライブ「PhaseShift」フォルダ（fileId `1_XcR1rzdx7DBNwr6eKhilDkjrlRO9-7S`）配下のテーマ別サブフォルダ
+  （例：NITE 関連は「PhaseShift/NITE」fileId `1zZadQVPAYmDEdC_H3eXqc8Ztfz-NGaTk`）。該当が無ければ「PhaseShift」直下に新設する。
 - ファイル名はリポジトリと同一にする（`〜_vX_Y_YYYYMMDD` を含む）。改版時は上書きせず新しい日付・版で追加する。
 - 報告には Drive の保存先（フォルダ名）を1行添える。保存できなかった場合は「Drive 未保存」と明示する。
 - Git が正本の記録（`meta/`・`tools/`）も対象。Drive 側は閲覧用コピーであり、正本の所在は §2 の表に従う。
