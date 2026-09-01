@@ -28,6 +28,10 @@ targets:
     profile: internal
     gate: false
     note: 廃止扱い。是正項目2・5〜8を含まないため不合格が正常
+  - doc: nite/NITE_第2回協議_評価プロトコル説明資料_v0_1_20260901.md
+    profile: nite
+    gate: true
+    note: NITE 第2回協議 事前共有資料（案）。中小機構経由で NITE へ渡る（NDA 当事者外のため顧客は匿名化）
 
 # 送付前検証のルール
 #
@@ -312,3 +316,45 @@ profiles:
         why: 是正項目1
       - term: 仮置き
         why: r=92.9% の留保
+
+  nite:
+    description: NITE 向け事前共有資料（機密性2・中小機構経由。NITE は顧客 NDA の当事者ではないため実名不可。構造情報不可）
+    skip_html_comments: true
+    forbidden:
+      - term: 伊勢化学
+        why: NDA 当事者外への実名開示不可。「国内主要生産者 A社」へ
+      - term: Oエナジー
+        why: 同上。「国内主要生産者 B社」へ
+      - term: 大網白里
+        why: 拠点名は相手先を特定する
+      - term: 千葉県産技研
+        why: 測定機関名は出さない（§6 用語規律）
+      - term: ラクタム
+        why: 分離材の構造情報。特許出願前は評価方法に限定して開示する
+      - term: ピロリドン
+        why: 同上
+      - term: "92.9"
+        why: r は事業判断用の仮置き値。評価プロトコル資料には載せない
+      - term: "2.39"
+        why: 撤退ラインは内部の事業判断値。NITE へは出さない
+      - term: 回収率≧20%
+        why: 6/11 資料 v1 の旧 Gate 表記。現行は q×R 体系
+      - term: 選択性≧5倍
+        why: 同上
+      - term: 耐久性≧80%
+        why: 同上
+      - term: サンプル受領
+        why: 受領の事実が確認されるまで「提供に合意済」
+    required:
+      - term: 96.8%
+        why: 希薄水系の捕捉実証値（95.0% は取り違え）
+      - term: ヘキサン中
+        why: 91.4% / 73.9% はヘキサン中の値
+      - term: 79.4%
+        why: 再利用時の実測値の開示（不利データを隠さない）
+      - term: 捕捉率
+        why: 捕捉率と回収率 R の定義区別を明示する
+      - term: 技術アドバイザー
+        why: 西村准教授の肩書
+      - term: 国内主要生産者
+        why: 実名の置き換え先
