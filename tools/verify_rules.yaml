@@ -32,6 +32,10 @@ targets:
     profile: internal_field
     gate: true
     note: 白里工場見学 現場携帯チェックリスト（2026/09/01・社内限。実名は NDA 相手先本人に提示する内部文書のため許容）
+  - doc: dglobal/伊勢化学_白里工場見学_質問リスト_20260901.md
+    profile: internal_field
+    gate: true
+    note: 白里工場見学 質問リスト（2026/09/01・社内限。チェックリストの対）
 
 # 送付前検証のルール
 #
