@@ -80,6 +80,10 @@ targets:
     profile: internal_note
     gate: true
     note: 一次原文 精査 第1回の結果（経産省3点の逐語）・検算・食い違い2件・適用記録
+  - doc: dglobal/高専_第二候補グループ_検証記録_20260902.md
+    profile: internal_note
+    gate: true
+    note: 高専 第二候補グループ提示案の検証記録（REVISE・第1級3件）。社内記録。打診文案 §7 は実名（A社/B社）・構造情報を含まない
 
 # 送付前検証のルール
 #
