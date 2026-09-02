@@ -52,6 +52,10 @@ targets:
     profile: internal_note
     gate: true
     note: KSAC-GAP 第4回 ステップ1/2 一次調査（判断待ち #4 の材料）
+  - doc: dglobal/北米展開_CSO規律_ゲート済_20260902.md
+    profile: internal_note
+    gate: true
+    note: 外部ブリーフ第3弾（北米）のゲート済み規律と現時点の CSO 判定（社内記録）
 
 # 送付前検証のルール
 #
