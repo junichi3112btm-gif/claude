@@ -20,6 +20,10 @@ targets:
     profile: deck_design
     gate: true
     note: TIB 登壇原稿（是正版）
+  - doc: ipas/IPAS_SU応募書類_記入原稿_v2_20260902.md
+    profile: ipas
+    gate: false
+    note: "IPAS（INPIT）SU応募 v2 記入原稿。⏹ 2026/09/02 加藤決定により第2期は見送り。参考表示（再提出を決めたら gate を true へ戻す）"
   - doc: dglobal/PhaseShift_TIB_DEMODAY_20260906_rev3.pptx
     profile: deck
     gate: false
@@ -301,6 +305,37 @@ profiles:
         why: サンプル未受領。事実に反する
       - term: 独占取得
         why: 市場文脈の独占表現
+
+  ipas:
+    description: IPAS（INPIT）応募フォームの記入原稿（守秘義務下の提出物。実名可・出願前の構造情報と旧単価系は不可）
+    forbidden:
+      - term: 現場検証を開始
+        why: 実廃水サンプルは未受領。事実に反する（v1 の記述）
+      - term: 1,717円
+        why: 旧プロセス利用料。2026/09/01 決定で 2,000円/kg-I₂
+      - term: 8,000万円
+        why: 旧装置価格。2026/09/01 決定で 1億円/基
+      - term: 847万円
+        why: 旧第2層。2026/09/01 決定で 1,000万円/年
+      - term: 完全回避
+        why: §5.2 は「回避しうる設計が成立するとの確認」まで
+      - term: ラクタム
+        why: 出願前の構造情報（8/30 検閲③）。応募書類には書かない
+      - term: 圧倒的
+        why: 絶対表現（第1.5版で排除）
+    required:
+      - term: 回収率は未測定
+        why: r 未実測の留保（台帳 §2）
+      - term: 3.16年
+        why: 顧客投資回収（新単価系）
+      - term: 2,000円/kg-I₂
+        why: 第3層単価（新単価系）
+      - term: 協議中
+        why: 共同出願契約・持分は未確定（第1級③の是正維持）
+      - term: 単一の目標日
+        why: 設立時期の規律（§5.3）
+      - term: 回収率ではない
+        why: 96.8% は捕捉率（台帳 §7）
 
   internal:
     description: 内部正本（内部メタデータは許容し、事実誤りと用語規律のみを見る）
