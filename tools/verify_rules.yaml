@@ -64,6 +64,10 @@ targets:
     profile: internal_note
     gate: true
     note: M&A 戦略（外部ブリーフ第4弾）の CSO 検閲・採用版・既存タスクへの写像（社内記録）
+  - doc: dglobal/重要鉱物リスト_外部ブリーフ第5弾_照合記録_20260902.md
+    profile: internal_note
+    gate: true
+    note: 重要鉱物リスト（外部ブリーフ第5弾）の照合記録（PASS・参考情報。ヨウ素は日米いずれのリストにも不在）
 
 # 送付前検証のルール
 #
