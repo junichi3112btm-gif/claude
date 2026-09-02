@@ -80,6 +80,10 @@ targets:
     profile: internal_note
     gate: true
     note: 一次原文 精査 第1回の結果（経産省3点の逐語）・検算・食い違い2件・適用記録
+  - doc: dglobal/TRL4検証_事業性_ステータスレポート_20260902.md
+    profile: internal_note
+    gate: true
+    note: TRL4 検証進捗・事業性評価のステータスレポート（9/2 夕刻・社内限・6 領域を FACT／要検証仮説で分離）
 
 # 送付前検証のルール
 #
