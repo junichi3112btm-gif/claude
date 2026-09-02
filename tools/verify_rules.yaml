@@ -60,6 +60,10 @@ targets:
     profile: internal_note
     gate: true
     note: 北米 FS 机上版 v0.1（Gate 4 未達のため起動前。13 表・FACT/仮説/要確認）
+  - doc: dglobal/MA戦略_外部ブリーフ第4弾_CSO検閲_20260902.md
+    profile: internal_note
+    gate: true
+    note: M&A 戦略（外部ブリーフ第4弾）の CSO 検閲・採用版・既存タスクへの写像（社内記録）
 
 # 送付前検証のルール
 #
