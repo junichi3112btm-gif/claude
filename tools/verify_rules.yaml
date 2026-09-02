@@ -36,6 +36,22 @@ targets:
     profile: internal_field
     gate: true
     note: 白里工場見学 質問リスト（2026/09/01・社内限。チェックリストの対）
+  - doc: dglobal/東京応化_品質要件ヒアリングシート_v0_1_20260902.md
+    profile: internal_note
+    gate: true
+    note: 東京応化 品質要件ヒアリングシート v0.1（9/9・社内限。NDA なしの相手のため実名は A社／B社）
+  - doc: dglobal/伊勢化学_側流固定床封じ込め_1枚図_作成記録_20260902.md
+    profile: internal_note
+    gate: true
+    note: 伊勢化学 次回提示用 1枚図（SVG/PNG）の作成記録（社内限・NDA 相手先本人へ提示）
+  - doc: dglobal/DGlobal_様式1_転記対応表_新単価系差替_20260902.md
+    profile: internal_note
+    gate: true
+    note: D-Global 第6回 様式1 の転記対応表と新単価系差し替え案（内部・申請書は秘密保持下の審査資料）
+  - doc: dglobal/KSAC_GAP_ステップ1_2_公募一次調査_20260902.md
+    profile: internal_note
+    gate: true
+    note: KSAC-GAP 第4回 ステップ1/2 一次調査（判断待ち #4 の材料）
 
 # 送付前検証のルール
 #
@@ -311,6 +327,12 @@ profiles:
         why: サンプル未受領。事実に反する
       - term: 独占取得
         why: 市場文脈の独占表現
+
+  internal_note:
+    description: 社内記録・起票・骨子・ヒアリングシート（対外に出さない作業文書）。共通禁止語のみを見る。特定文書向けの保持必須語は課さない
+    skip_html_comments: true
+    required: []
+    forbidden: []
 
   internal_field:
     description: 現場携帯用・社内限文書（NDA相手先本人へ提示しうる内部文書。実名は許容し、共通禁止語＋用語是正の維持のみを見る）
