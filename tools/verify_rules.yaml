@@ -65,6 +65,10 @@ targets:
     profile: internal_note
     gate: true
     note: 同 作成記録（新単価系の適用範囲・不利データの開示方針・目視QA）
+  - doc: dglobal/ピッチデック4系統_送付可否監査_20260902.md
+    profile: internal_note
+    gate: false
+    note: Drive 上のデッキ4系統の送付可否監査（社内限。誤→正対応表として禁止語・実名を引用するため照合は参考扱い）
   - doc: dglobal/産総研向け_ご相談概要_1枚_作成記録_20260902.md
     profile: internal_note
     gate: true
