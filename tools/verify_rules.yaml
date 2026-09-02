@@ -56,6 +56,10 @@ targets:
     profile: internal_note
     gate: true
     note: 外部ブリーフ第3弾（北米）のゲート済み規律と現時点の CSO 判定（社内記録）
+  - doc: dglobal/北米FS_机上版_v0_1_20260902.md
+    profile: internal_note
+    gate: true
+    note: 北米 FS 机上版 v0.1（Gate 4 未達のため起動前。13 表・FACT/仮説/要確認）
 
 # 送付前検証のルール
 #
