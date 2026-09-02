@@ -57,6 +57,14 @@ targets:
     profile: external_open
     gate: true
     note: 産総研向け「ご相談概要」1枚 配布本文（PDF と同一テキストの正本。NDA なしの相手への配布物。pypdf 不動のため txt で検証）
+  - doc: dglobal/assets/PhaseShift_事業概要_20260902.txt
+    profile: external_open
+    gate: true
+    note: 投資家向け事業概要 A4 2枚 配布本文（UMI Ventures 水谷様宛。PDF と同一テキストの正本。新単価系を初めて適用した対外物）
+  - doc: dglobal/投資家向け事業概要_作成記録_20260902.md
+    profile: internal_note
+    gate: true
+    note: 同 作成記録（新単価系の適用範囲・不利データの開示方針・目視QA）
   - doc: dglobal/産総研向け_ご相談概要_1枚_作成記録_20260902.md
     profile: internal_note
     gate: true
