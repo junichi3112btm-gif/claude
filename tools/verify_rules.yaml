@@ -72,6 +72,10 @@ targets:
     profile: internal_note
     gate: true
     note: 経産省のヨウ素位置づけ（外部ブリーフ第6弾）の照合記録（REVISE。ペロブスカイト太陽電池の主要原材料としての政策接続を起票）
+  - doc: meta/実装プロンプト_原文精査_20260902.md
+    profile: internal_note
+    gate: true
+    note: 一次原文の精査を外部環境へ依頼する自己完結プロンプト（本サンドボックスは政府・企業IRサイトへアクセス不可）
 
 # 送付前検証のルール
 #
