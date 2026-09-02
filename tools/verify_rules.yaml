@@ -68,6 +68,10 @@ targets:
     profile: internal_note
     gate: true
     note: 重要鉱物リスト（外部ブリーフ第5弾）の照合記録（PASS・参考情報。ヨウ素は日米いずれのリストにも不在）
+  - doc: dglobal/経産省ヨウ素位置づけ_外部ブリーフ第6弾_照合記録_20260902.md
+    profile: internal_note
+    gate: true
+    note: 経産省のヨウ素位置づけ（外部ブリーフ第6弾）の照合記録（REVISE。ペロブスカイト太陽電池の主要原材料としての政策接続を起票）
 
 # 送付前検証のルール
 #
