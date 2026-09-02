@@ -53,6 +53,18 @@ targets:
     gate: true
     note: KSAC-GAP 第4回 ステップ1/2 一次調査（判断待ち #4 の材料）
 
+  - doc: dglobal/assets/PhaseShift_産総研ご相談概要_20260902.txt
+    profile: external_open
+    gate: true
+    note: 産総研向け「ご相談概要」1枚 配布本文（PDF と同一テキストの正本。NDA なしの相手への配布物。pypdf 不動のため txt で検証）
+  - doc: dglobal/産総研向け_ご相談概要_1枚_作成記録_20260902.md
+    profile: internal_note
+    gate: true
+    note: 同 作成記録（載せた／載せなかった数値と理由・目視QA。実名を含むため社内限）
+# 登録しない文書：dglobal/TECHNIUM_Day1_面談準備_20260902.md
+# 社内限であり対外成果物ではない。かつ「言ってはいけない語」の一覧そのものを本文に
+# 列挙する性質上、禁止語照合が構造的に偽陽性になる（14件）。同種の規律メモは登録しない。
+
 # 送付前検証のルール
 #
 # forbidden : 残存してはならない語。1件でも出れば不合格。
@@ -305,6 +317,29 @@ profiles:
         why: Plan A の2変数ゲート（マスター §2.5 判定規律との整合・rev3）
       - term: TDS 10万mg/L超
         why: 海外展開の未解決課題の開示（CSO 軽微・rev3）
+
+  external_open:
+    description: NDA のない相手へ渡す配布物（産総研等）。公開の場と同等に扱う。実名不可＋共通禁止語＋留保の維持
+    forbidden:
+      - term: 伊勢化学
+        why: NDA がない相手への配布物。実名不可（§5.1）
+      - term: Oエナジー
+        why: 同上（K&O の表記ゆれを拾う）
+      - term: 大網白里
+        why: 拠点名は相手先を一意に特定する
+      - term: 千葉県産技研
+        why: 測定機関名は出さない（主張は判定基準の事前開示であって測定場所ではない）
+      - term: カルボニル
+        why: 未出願の回避設計の構造情報（§5.2）
+      - term: 独占
+        why: 市場文脈の独占表現
+    required:
+      - term: 未測定
+        why: 回収率 r が実廃水で未測定である旨の留保（宿題13）。欠落すれば不合格
+      - term: 設計目標
+        why: 「廃熱で駆動する」の断定を避けた是正の維持（§6）
+      - term: 技術アドバイザー
+        why: 西村先生を共同創業者/CTO と書かない是正の維持（§6）
 
   deck_design:
     description: TIB デザイン版デッキ・登壇原稿（8/24 Google スライド系統。公開の場・禁止語のみで判定）
