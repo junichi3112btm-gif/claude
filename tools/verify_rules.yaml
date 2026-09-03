@@ -61,6 +61,10 @@ targets:
     profile: external_open
     gate: true
     note: 投資家向け事業概要 A4 2枚 配布本文（UMI Ventures 水谷様宛。PDF と同一テキストの正本。新単価系を初めて適用した対外物）
+  - doc: dglobal/assets/PhaseShift_事業概要_事業会社向け_20260902.txt
+    profile: external_open
+    gate: true
+    note: 事業概要 事業会社向け派生版（資金計画行を除外。栗田工業 林顧問へ宇都宮様経由で提示・NDA なし）
   - doc: dglobal/投資家向け事業概要_作成記録_20260902.md
     profile: internal_note
     gate: true
