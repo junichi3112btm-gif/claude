@@ -92,6 +92,10 @@ targets:
     profile: internal_note
     gate: true
     note: 日宝化学（外部ブリーフ第8弾）の CSO 検閲（REVISE。9/15 面談の設計＝開示第1層・比較表は作らない・質問 3 問追加）
+  - doc: dglobal/TECHNIUM御礼メール7通_送付前検証_20260904.md
+    profile: internal_note
+    gate: true
+    note: TECHNIUM 御礼メール 7 通の送付前検証（第1級 3 種＝宛先未確認・第3層旧呼称・北米主筋。本文は下書きへ適用済み、宛先は未確認）
 
 # 送付前検証のルール
 #
