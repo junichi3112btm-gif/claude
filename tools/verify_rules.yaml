@@ -88,6 +88,10 @@ targets:
     profile: internal_note
     gate: true
     note: 高専・大学の外注／共同開発先（外部ブリーフ第7弾）の CSO 検閲（REVISE。第1級 3 件を直した採用版と既存タスクへの写像）
+  - doc: dglobal/日宝化学_外部ブリーフ第8弾_CSO検閲_20260903.md
+    profile: internal_note
+    gate: true
+    note: 日宝化学（外部ブリーフ第8弾）の CSO 検閲（REVISE。9/15 面談の設計＝開示第1層・比較表は作らない・質問 3 問追加）
 
 # 送付前検証のルール
 #
