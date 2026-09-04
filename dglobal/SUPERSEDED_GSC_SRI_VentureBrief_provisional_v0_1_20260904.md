@@ -1,3 +1,7 @@
+> ⛔ **廃止扱い（2026/09/04）。** SRI 公式テンプレート「Venture Brief - At-a-Glance (Applicant)」を Drive で取得したため、
+> 6 セクション構成の `GSC_SRI_VentureBrief_SRItemplate_v1_0_20260904.md` へ移行した。**提出はテンプレート版**。
+> 本書はテンプレート未取得時の暫定5ページ版であり、内容のドナー（数値・留保表現）として保持する。記録は消さない（CLAUDE.md §11）。
+
 # PhaseShift Technologies — Venture Brief (provisional, 5 pages)
 
 **Global Startup Campus / SRI Venture Build Program — application attachment**

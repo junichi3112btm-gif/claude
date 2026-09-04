@@ -97,10 +97,18 @@ targets:
     profile: gsc_en
     gate: true
     note: GSC/SRI 事業化支援プログラム 申請フォームの英文回答案（NDA なしの審査パネル向け。実名は Producer A／B）
-  - doc: dglobal/GSC_SRI_VentureBrief_provisional_v0_1_20260904.md
+  - doc: dglobal/GSC_SRI_VentureBrief_SRItemplate_v1_0_20260904.md
     profile: gsc_en
     gate: true
-    note: 同 Venture Brief 暫定5ページ版（PDF の生成元。PDF は md2pdf.py で同一本文から生成）
+    note: 同 Venture Brief（SRI 公式テンプレート 6 セクション準拠・第1.0版。これが提出物。PDF は md2pdf.py で同一本文から生成）
+  - doc: dglobal/GSC_SRI_VentureBrief_SRItemplate_v1_0_20260904.pdf
+    profile: gsc_en
+    gate: true
+    note: 同 PDF 本体（提出ファイル。venv の pypdf で本体を直接検証）
+  - doc: dglobal/SUPERSEDED_GSC_SRI_VentureBrief_provisional_v0_1_20260904.md
+    profile: gsc_en
+    gate: false
+    note: 暫定5ページ版（廃止扱い。SRI テンプレート取得により第1.0版へ移行。記録として保持）
   - doc: dglobal/GSC_SRI_申請_作成記録_20260904.md
     profile: internal_note
     gate: true
