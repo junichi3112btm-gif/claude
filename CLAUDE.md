@@ -326,6 +326,11 @@ pdf のみ `pypdf` が要る。YAML 読み込みに `pyyaml`）。
 - アカウント側スキルはこのサンドボックスから追加・削除できない（参照・提案のみ）。
   `.claude/skills/` のファイルが以後の正本であり、貼り付け元として使う。
 - Python の依存：`pyyaml`（必須）・`pypdf`（PDF を検証するときのみ）。
+  **`pip install` はシステム環境では失敗する**（`pyo3_runtime.PanicException`。`--break-system-packages` でも同じ）。
+  venv を作れば入る：`python3 -m venv <scratch>/v && <scratch>/v/bin/pip install pypdf pyyaml`。
+  以後 `<scratch>/v/bin/python tools/verify.py --doc <file.pdf> --profile <p>` で **PDF 本体を検証できる**（2026/09/04 確認）。
+- **md → PDF は `tools/md2pdf.py`**（同梱 Chromium の `--print-to-pdf`）。LibreOffice が使えなくても
+  md の対外文書は PDF 化できる。**pptx→PDF は依然できない**（上記の制約は pptx にのみ残る）。
 
 ---
 
