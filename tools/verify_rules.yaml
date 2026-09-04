@@ -84,6 +84,10 @@ targets:
     profile: internal_note
     gate: true
     note: ヨウ素の成因（鈴木モデル／南関東 vs オクラホマ）の CSO 検閲。当社の北米FSに第2級2件を検出した記録
+  - doc: dglobal/インド市場_外部ブリーフ第8弾_CSO検閲_20260903.md
+    profile: internal_note
+    gate: true
+    note: インド市場（販売先）の CSO 検閲。判定 Hold。第3層が回収量連動である帰結として当社に販売先開拓の動機がないことを整理
 
 # 送付前検証のルール
 #
