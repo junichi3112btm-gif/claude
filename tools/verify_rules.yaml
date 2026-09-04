@@ -466,6 +466,10 @@ profiles:
         why: 同上
       - term: NDA signed with Producer B
         why: B社との三者間 NDA は未締結（§5.3）
+      - term: 6.0–8.6 bn
+        why: A の旧ネット基準値。2026/09/04 加藤決定でグロスへ変更し A＝約100億円（JPY 10 bn・幅 8.2〜11.8 bn）
+      - term: 2.95–4.21 bn
+        why: B の旧ネット基準値。現行は 4.0〜5.8 bn
       - term: "$72.7"
         why: 削除済み旧単価系列
       - term: "1.84"
