@@ -93,6 +93,19 @@ targets:
     gate: true
     note: 海外戦略の統合（地域の順序・Gate 4 の現在地 0/9・北米 FS の要旨と起動前の第2級2件・インド Hold・政策メッセージ・対外表現）
 
+  - doc: dglobal/GSC_SRI_申請_英文回答案_20260904.md
+    profile: gsc_en
+    gate: true
+    note: GSC/SRI 事業化支援プログラム 申請フォームの英文回答案（NDA なしの審査パネル向け。実名は Producer A／B）
+  - doc: dglobal/GSC_SRI_VentureBrief_provisional_v0_1_20260904.md
+    profile: gsc_en
+    gate: true
+    note: 同 Venture Brief 暫定5ページ版（PDF の生成元。PDF は md2pdf.py で同一本文から生成）
+  - doc: dglobal/GSC_SRI_申請_作成記録_20260904.md
+    profile: internal_note
+    gate: true
+    note: GSC 申請の作成記録（判断理由・しなかったこと・要確認・目視QA）
+
 # 送付前検証のルール
 #
 # forbidden : 残存してはならない語。1件でも出れば不合格。
@@ -367,6 +380,95 @@ profiles:
         why: サンプル未受領。事実に反する
       - term: 独占取得
         why: 市場文脈の独占表現
+
+  gsc_en:
+    description: GSC/SRI 申請の英文成果物（NDA の無い審査パネルへ渡る公開相当の文書。英文の実名・断定・禁止表現を見る。normalize は空白とハイフンを除去し大文字小文字は区別するため、語形ごとに登録する）
+    forbidden:
+      - term: Ise Chemical
+        why: NDA 稼働中の相手先の実名（§5.1）。Producer A と書く
+      - term: ISE CHEMICAL
+        why: 同上
+      - term: K&O
+        why: 実名不可。Producer B と書く
+      - term: Kanto Natural Gas
+        why: 実名不可（B社グループ会社）
+      - term: Oamishirasato
+        why: 拠点名は相手先を特定する
+      - term: Nippoh
+        why: 第3の生産者。NDA なし・面談前のため名指ししない
+      - term: co-founder
+        why: 西村准教授は「技術アドバイザー」（§6）
+      - term: Co-founder
+        why: 同上
+      - term: CTO
+        why: 同上
+      - term: chemical-free
+        why: 断定を避け「designed to need no reagents」とする（§6）
+      - term: reagent-free
+        why: 同上
+      - term: solvent-free
+        why: 同上
+      - term: driven by waste heat
+        why: 「design heat source」とし断定しない（§6）
+      - term: waste-heat driven
+        why: 同上
+      - term: platform
+        why: 具体的な機能で記述する（§6）
+      - term: Platform
+        why: 同上
+      - term: world's first
+        why: §6
+      - term: world-first
+        why: §6
+      - term: no competitor
+        why: 「双方とも未公開」とする（§6）
+      - term: uncontested market
+        why: 同上
+      - term: success fee
+        why: 「per-kilogram process fee」とする（§6）
+      - term: Success-Based
+        why: 同上（ピッチデック 9/4 版の表記）
+      - term: success-based
+        why: 同上
+      - term: subscription
+        why: 「consumables supply」とする（§6）
+      - term: revenue share
+        why: 「回収量連動」であり売上連動ではない（§6）
+      - term: revenue-share
+        why: 同上
+      - term: TOEIC
+        why: 個人スコアは書かない（§5.4）
+      - term: rare metal
+        why: 指定の事実が無い（§5.3）
+      - term: carbonyl
+        why: 応用特許①の回避設計の構造情報。10月出願まで不可（§5.2）
+      - term: June 2027
+        why: 設立時期に単一の目標日を置かない（§5.3）
+      - term: 96.8% recovery
+        why: 96.8% は捕捉率。回収率ではない（§3）
+      - term: 96.8% recovered
+        why: 同上
+      - term: recovery of 96.8
+        why: 同上
+      - term: 95.0%
+        why: 希薄水系は 96.8%（§6）
+      - term: JP 2025-76683
+        why: 特開の対象範囲が第三者レポートで疑義。西村先生・制野様の確認まで公開番号を書かない
+      - term: 2025-76683
+        why: 同上
+      - term: NDA signed with Producer B
+        why: B社との三者間 NDA は未締結（§5.3）
+      - term: "$72.7"
+        why: 削除済み旧単価系列
+      - term: "1.84"
+        why: 削除済み旧撤退ライン
+    required:
+      - term: not yet measured
+        why: 実廃水での回収率が未測定である留保（宿題13）
+      - term: Producer A
+        why: 実名の匿名化が維持されていること
+      - term: capture
+        why: 捕捉率と回収率を区別する表記
 
   internal_note:
     description: 社内記録・起票・骨子・ヒアリングシート（対外に出さない作業文書）。共通禁止語のみを見る。特定文書向けの保持必須語は課さない
