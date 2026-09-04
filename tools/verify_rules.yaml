@@ -96,6 +96,10 @@ targets:
     profile: internal_note
     gate: true
     note: TECHNIUM 御礼メール 7 通の送付前検証（第1級 3 種＝宛先未確認・第3層旧呼称・北米主筋。本文は下書きへ適用済み、宛先は未確認）
+  - doc: dglobal/KSAC推進機関_BNV打診状_送付前検証_20260904.md
+    profile: internal_note
+    gate: true
+    note: KSAC-GAP ステップ2 事業化推進機関の打診状（BNV 宛）の送付前検証。判断 #4 を案A で着手・#26 を KSAC 側で確定
 
 # 送付前検証のルール
 #
