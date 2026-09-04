@@ -88,6 +88,10 @@ targets:
     profile: internal_note
     gate: true
     note: インド市場（販売先）の CSO 検閲。判定 Hold。第3層が回収量連動である帰結として当社に販売先開拓の動機がないことを整理
+  - doc: dglobal/海外戦略_統合_20260903.md
+    profile: internal_note
+    gate: true
+    note: 海外戦略の統合（地域の順序・Gate 4 の現在地 0/9・北米 FS の要旨と起動前の第2級2件・インド Hold・政策メッセージ・対外表現）
 
 # 送付前検証のルール
 #
