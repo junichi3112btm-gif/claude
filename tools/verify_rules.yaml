@@ -92,6 +92,10 @@ targets:
     profile: internal_note
     gate: true
     note: 海外戦略の統合（地域の順序・Gate 4 の現在地 0/9・北米 FS の要旨と起動前の第2級2件・インド Hold・政策メッセージ・対外表現）
+  - doc: dglobal/福岡DeTEP_不足情報回答票_回答案_20260904.md
+    profile: internal_note
+    gate: true
+    note: 福岡市 DeTEP 2026 不足情報回答票（05）の回答案。転記は加藤の手作業・Drive 未反映。本票は福岡市へ共有されるため実名不可
 
 # 送付前検証のルール
 #
