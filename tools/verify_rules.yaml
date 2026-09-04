@@ -80,6 +80,10 @@ targets:
     profile: internal_note
     gate: true
     note: 一次原文 精査 第1回の結果（経産省3点の逐語）・検算・食い違い2件・適用記録
+  - doc: dglobal/ヨウ素成因_外部ブリーフ第7弾_CSO検閲_20260903.md
+    profile: internal_note
+    gate: true
+    note: ヨウ素の成因（鈴木モデル／南関東 vs オクラホマ）の CSO 検閲。当社の北米FSに第2級2件を検出した記録
 
 # 送付前検証のルール
 #
