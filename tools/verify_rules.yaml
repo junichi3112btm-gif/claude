@@ -92,6 +92,10 @@ targets:
     profile: internal_note
     gate: true
     note: インド市場（販売先）の CSO 検閲。判定 Hold。第3層が回収量連動である帰結として当社に販売先開拓の動機がないことを整理
+  - doc: dglobal/GSC_SRI_提出チェックリスト_20260904.md
+    profile: internal_note
+    gate: true
+    note: GSC 提出の最終チェックリスト（送信前の判断5件・転記表・送信後の日程・他案件との関係）
   - doc: meta/実装プロンプト_GSC_SRI_ブラッシュアップ_20260904.md
     profile: internal_note
     gate: true
