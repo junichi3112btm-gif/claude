@@ -7,11 +7,15 @@
 # gate: false … 参考照合。不合格でも全体の判定には影響しない（廃止扱いの正本など）
 
 targets:
-  - doc: dglobal/DGlobal_事業化推進機関_ご検討資料_v1_0_20260828.md
+  - doc: dglobal/DGlobal_事業化推進機関_ご検討資料_v1_1_20260904.md
     profile: external
     recompute: true
     gate: true
-    note: D-Global 検討資料 対外第1.0版
+    note: D-Global 検討資料 対外第1.1版（新単価系＋A・B グロス化を適用。これが現行）
+  - doc: dglobal/SUPERSEDED_DGlobal_事業化推進機関_ご検討資料_v1_0_20260828.md
+    profile: external
+    gate: false
+    note: 対外第1.0版（廃止扱い。旧単価系・A/B ネット基準。記録として保持）
   - doc: dglobal/TIB_DEMODAY_デザイン版_是正済_20260829.pptx
     profile: deck_design
     gate: true
@@ -88,6 +92,10 @@ targets:
     profile: internal_note
     gate: true
     note: インド市場（販売先）の CSO 検閲。判定 Hold。第3層が回収量連動である帰結として当社に販売先開拓の動機がないことを整理
+  - doc: dglobal/新単価系_全文書適用_対応表_20260904.md
+    profile: internal_note
+    gate: true
+    note: 新単価系＋A・B グロス化の全文書適用（適用済み一覧と、加藤の手修正用の誤→正対応表）
   - doc: dglobal/海外戦略_統合_20260903.md
     profile: internal_note
     gate: true
@@ -188,8 +196,8 @@ profiles:
         why: 内部の是正経緯。外部は旧版を受領していない
       - term: fileId
         why: Drive の内部識別子
-      - term: 第1.1版
-        why: 対外的には第1.0版が初版。旧版参照は疑問を生む
+      - term: 第1.0版
+        why: 現行は第1.1版。相手は旧版を受領していないため旧版参照は疑問を生む
       - term: 第1.2版
         why: 同上
       - term: 第1.3版
@@ -217,8 +225,12 @@ profiles:
         why: 是正項目6。§2.2 の「いずれも」は過大（ヘキサンに上澄みは成立しない）
       - term: 51〜106
         why: 是正項目2。$74.27 での反転点
-      - term: 精査中
-        why: ネット化率 72.9% の留保（宿題16）
+      - term: 内訳は未確定
+        why: ネット化率 72.9% の留保（宿題16）。第1.1版で A・B をグロス化したため、留保は「内訳が未確定＝市場規模には使わない」の形で維持する
+      - term: 2,000円
+        why: 第3層の新単価（2026/09/01 加藤決定）の維持
+      - term: 1億円
+        why: 装置価格の新単価の維持
       - term: 158.64
         why: 是正項目3。単価は1系列に統一
     numbers:
@@ -238,18 +250,27 @@ profiles:
         tol: 0.5
         note: 派生値は丸めた 11,782 を用いる（未丸めだと 4,161円ずれる）
       - label: 顧客側 年間純増粗利
-        formula: "5085.1 - 847.4 - 741.1 - 59.7"
-        expect: "3,436.9"
+        formula: "5085.1 - 1000 - 863.2 - 59.7"
+        expect: "3,162.2"
         tol: 0.1
-        note: 増産売上 − OPEX − 利用料 − 動力費
+        note: 増産売上 − 第2層 − 利用料 − 動力費（2026/09/01 新単価系）
       - label: プロセス利用料
-        formula: "4316 * 1717 / 10000"
-        expect: "741.1"
+        formula: "4316 * 2000 / 10000"
+        expect: "863.2"
         tol: 0.1
       - label: 投資回収期間
-        formula: "8000 / 3436.9"
-        expect: "2.33"
+        formula: "10000 / 3162.2"
+        expect: "3.16"
         tol: 0.01
+      - label: A 未回収資源ポテンシャル（下限）
+        formula: "700 * 1000 * 11782 / 100000000"
+        expect: "82.5"
+        tol: 0.1
+        note: 2026/09/04 グロス化。上限は 117.8（丸めて約100億円）
+      - label: B アドレス可能顧客価値（下限）
+        formula: "700 * 1000 * 11782 * 0.49 / 100000000"
+        expect: "40.4"
+        tol: 0.1
       - label: 処分費比較 7ppm
         formula: "7 * 0.158987 / 1000 * 74.27"
         expect: "0.083"
