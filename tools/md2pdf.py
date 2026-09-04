@@ -105,7 +105,10 @@ def md_to_html(md: str, title: str) -> str:
         if m:
             flush_para(); close_list()
             lvl = len(m.group(1))
-            out.append(f"<h{lvl}>{inline(m.group(2))}</h{lvl}>"); i += 1; continue
+            # 末尾に不可視の非改行スペースを置く。Chromium の PDF は見出しと次ブロックの
+            # テキストが連結して抽出されることがあり（コピー時に "HypothesisWhy" となる）、
+            # これを入れると必ず語間が空く。表示は変わらない。
+            out.append(f"<h{lvl}>{inline(m.group(2))}&nbsp;</h{lvl}>"); i += 1; continue
         if s == "---":
             flush_para(); close_list(); out.append("<hr>"); i += 1; continue
         m = re.match(r"^[-*]\s+(.*)$", s)
