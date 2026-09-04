@@ -24,11 +24,11 @@ from pathlib import Path
 CSS = """
 @page { size: A4; margin: 13mm 14mm 13mm 14mm; }
 body { font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans", "Noto Sans CJK JP", sans-serif;
-       font-size: 9.4pt; line-height: 1.33; color: #1a1a1a; }
+       font-size: 9.3pt; line-height: 1.30; color: #1a1a1a; }
 h1 { font-size: 17pt; margin: 0 0 6pt; line-height: 1.25; }
 h2 { font-size: 12pt; margin: 11pt 0 4pt; padding-bottom: 2pt; border-bottom: 1px solid #999; }
 h3 { font-size: 10.8pt; margin: 10pt 0 3pt; }
-p  { margin: 0 0 5pt; }
+p  { margin: 0 0 4.5pt; }
 ul, ol { margin: 0 0 6pt 18pt; padding: 0; }
 li { margin: 0 0 2pt; }
 table { border-collapse: collapse; width: 100%; margin: 4pt 0 8pt; font-size: 8.8pt; }
