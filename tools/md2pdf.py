@@ -22,16 +22,16 @@ import tempfile
 from pathlib import Path
 
 CSS = """
-@page { size: A4; margin: 13mm 14mm 13mm 14mm; }
+@page { size: A4; margin: 12mm 14mm 12mm 14mm; }
 body { font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans", "Noto Sans CJK JP", sans-serif;
        font-size: 9.3pt; line-height: 1.30; color: #1a1a1a; }
 h1 { font-size: 17pt; margin: 0 0 6pt; line-height: 1.25; }
-h2 { font-size: 12pt; margin: 11pt 0 4pt; padding-bottom: 2pt; border-bottom: 1px solid #999; }
+h2 { font-size: 11.5pt; margin: 9pt 0 3.5pt; padding-bottom: 2pt; border-bottom: 1px solid #999; }
 h3 { font-size: 10.8pt; margin: 10pt 0 3pt; }
 p  { margin: 0 0 4.5pt; }
 ul, ol { margin: 0 0 6pt 18pt; padding: 0; }
 li { margin: 0 0 2pt; }
-table { border-collapse: collapse; width: 100%; margin: 4pt 0 8pt; font-size: 8.8pt; }
+table { border-collapse: collapse; width: 100%; margin: 3pt 0 7pt; font-size: 8.6pt; }
 th, td { border: 1px solid #bbb; padding: 3pt 5pt; vertical-align: top; text-align: left; }
 th { background: #f0f0f0; }
 code { font-family: Menlo, Consolas, monospace; font-size: 9pt; background: #f4f4f4; padding: 0 2pt; }

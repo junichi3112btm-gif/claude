@@ -6,7 +6,7 @@
 
 > **Recover more iodine from what is already being produced — without pumping more brine.**
 
-*Prepared on the SRI GSC Venture Brief template, 4 September 2026. Figures follow our internal business plan v1.9 (29 Aug 2026) and the pricing revision of 1 Sep 2026. "Estimate" means our own calculation from public data; "not yet measured" means open. Two Japanese producers we are working with are named Producer A and Producer B because those discussions are confidential.*
+*On the SRI GSC Venture Brief template, 4 September 2026. Figures follow our business plan v1.9 (29 Aug 2026) and the pricing revision of 1 Sep 2026. "Estimate" means our own calculation from public data; "not yet measured" means open. The two Japanese producers we work with are named Producer A and Producer B because those discussions are confidential.*
 
 ---
 
@@ -25,11 +25,11 @@ At the same time, iodine remains in the discharge at concentrations that existin
 | **PhaseShift working estimate**, derived from the rows above | about two-thirds of the incoming iodine is recovered; the remainder leaves with the discharge at 7–12 ppm; **700–1,000 t/yr uncaptured nationwide**, on the order of **JPY 10 bn/yr** at market price (700–1,000 t × JPY 11,782/kg = JPY 8.2–11.8 bn). Assumptions: the published plant is representative; discharge sits in the 7–12 ppm band; value at market price, not at a price we would receive |
 | Being verified | the national figure, with the Society of Iodine Science |
 
-Recovering iodine from that discharge is one potential way to increase supply without increasing brine pumping.
+Recovering iodine from that discharge is one potential way to increase supply without pumping more.
 
 **How our technology addresses it, in plain language.** A polymer developed at Doshisha University binds iodine at single-digit ppm; warming the water slightly makes it separate into a small concentrated phase that carries the iodine with it, and a further temperature step releases the iodine so the polymer is reused. Because the trigger is temperature, the regeneration step is designed to avoid a consumed reducing agent — a claim about regeneration only, since feed-side pre-treatment may still be required. The equipment is a side-stream unit on the discharge line: 3.5–6.8% of the plant flow is diverted into it, treated and returned, and the main line never stops. Within that diverted stream, only the concentrated phase — about 1–3% of it — is heated. The producer owns the unit and keeps the iodine; we supply the polymer and charge per kilogram recovered.
 
-**Why now.** The producers opened the door: two majors have agreed to supply real wastewater, and one gave us a written list of adoption requirements. Demand-side pull is strengthening in two places, which we treat as context rather than as the basis of the plan and which carry no revenue in our financials: Japanese policy names iodine a principal raw material for perovskite solar cells intended for domestic manufacture, and iodine has demonstrated potential as an alternative propellant to xenon for electric propulsion. And the same recovery structure exists at much larger scale in US produced water, where recovery at higher concentrations is already commercial.
+**Why now.** The producers opened the door: two majors have agreed to supply real wastewater, one with a written list of adoption requirements. Demand-side pull is strengthening in two places — context rather than the basis of the plan, and carrying no revenue in our financials: Japanese policy names iodine a principal raw material for perovskite solar cells intended for domestic manufacture, and iodine has demonstrated potential as an alternative propellant to xenon. And the same recovery structure exists at much larger scale in US produced water, where recovery at higher concentrations is already commercial.
 
 ---
 
@@ -46,7 +46,7 @@ Recovering iodine from that discharge is one potential way to increase supply wi
 | Model brine wastewater, 7 ppm | — | supernatant below detection limit | capture |
 | Reuse, second cycle | — | 79.4% | dose not recorded; cause unresolved |
 
-These are **capture** figures from the fall in supernatant absorbance. They exclude desorption and collection, so **recovery on real wastewater has not yet been measured**; our plan carries a 92.9% placeholder that we flag wherever it drives a number. A foundational patent covering the polymer family is filed and published in Japan (Doshisha University, sole applicant; inventor: the PI). A first application patent, jointly filed by the university and Kato, cleared the university invention committee on 7 August 2026 and is scheduled for filing in October 2026; its content is withheld until then.
+These are **capture** figures from the fall in supernatant absorbance. They exclude desorption and collection, so **recovery on real wastewater has not yet been measured**; our plan carries a 92.9% placeholder that we flag wherever it drives a number. **Research base.** The work originates in a Japanese university laboratory, as the call requires. The PI is an associate professor at Doshisha University, inventor of the foundational patent and a recipient of a joint-research award in materials and devices; a list of the laboratory's peer-reviewed publications underlying this chemistry can be supplied as supporting material. A foundational patent covering the polymer family is filed and published in Japan (Doshisha University, sole applicant; inventor: the PI). A first application patent, jointly filed by the university and Kato, cleared the university invention committee on 7 August 2026 and is scheduled for filing in October 2026; its content is withheld until then.
 
 **IP created during this programme.** The call requires that IP newly created through its support vest, in principle, in a domestic Japanese entity. Being pre-incorporation, we will document before the sprint: laboratory results vest in Doshisha University under the exclusive-option arrangement we already use for public R&D; commercial outputs — market and customer data, commercial design — vest in the Japanese company on incorporation, held by Kato under an assignment undertaking until then. Nothing is structured to place new IP outside Japan.
 
@@ -103,13 +103,17 @@ We do not rely on critical-mineral subsidies or policy support for the US case.
 
 We would rather state a number we can hold to for five months than one that looks better on an application.
 
+**Compliance.** We will support the checks on export control, research integrity and conflict of interest — current practice rather than intention: the business lead prepared export-control filings for an international joint-research application this August, and the university's research-integrity and IP procedures govern the laboratory side.
+
 **How we decide, and how we handle disagreement.** Technical judgements are the PI's, commercial ones Kato's; what matters more is that we set numerical thresholds before we have the data and hold ourselves to them. We keep two things separate. The six milestones in the next section are what we test **during** the sprint. Separately, a set of pre-agreed conditions must hold **before** we would start a US feasibility study at all — domestic technical validation, a paid field unit or equivalent commitment, the patent filing, ring-fenced funding, dedicated staffing, a US partner candidate, a site candidate, cost-share and a third-party verification lab. **None of those conditions is met today**, which is why we are not yet pursuing US commercialization. When we disagree, the question becomes which measurement settles it and when we will have it. We keep a single register of every number and its source, so a figure cannot quietly diverge between documents; twice this year that discipline forced us to disclose things we would rather not — the 30% polymer loss, and the fact that our recovery rate is a placeholder.
 
 ---
 
 ## 5. Milestones — what we will validate between October 2026 and February 2027
 
-| # | Assumption to test | How we will know it is wrong | Where in the program we test it |
+Each hypothesis carries both halves the call asks for: a **success criterion** — the observation that lets us proceed — and its **falsifier**, stated here because it is the harder half to write honestly.
+
+| # | Assumption to test | Success criterion / falsifier: how we will know it is wrong | Where in the program we test it |
 | :-: | :-- | :-- | :-- |
 | **A. Commercial feasibility** | | | |
 | 1 | Thin, unconnected produced-water streams exist at aggregation points in Oklahoma at volumes worth a unit | A concentration-and-volume map built from operator and state data shows no 20–40 ppm streams at 5,000+ bbl/day, or every such stream is already contracted to an existing plant | US customer discovery; mentor introductions; Silicon Valley bootcamp |
@@ -135,7 +139,7 @@ Two results feed the sprint: a TRL4 assessment on real wastewater from Producers
 
 **What has to be true.** Recovery verified on real wastewater rather than assumed; continuous-flow hardware that runs unattended; polymer loss low enough that consumables are a margin, not a leak; producers who buy rather than wait; and, in the US, thin streams that are real and a polymer that survives the salt. We would rather reach February 2027 having disproved one of these than having avoided testing it.
 
-**What we can contribute to the programme.** The call expects selected teams to be partners in building a Japanese model for globally oriented deep-tech commercialization, not only recipients. We can put in two things: a documented gate framework that decides go/no-go on numbers fixed in advance, which we already operate and would open to the programme; and a deliberately unglamorous case — a materials venture selling into conservative infrastructure operators, where the hard part is adoption rather than invention. If the model works only for software-shaped ventures it will not travel across Japanese deep tech, and we would rather be the awkward test case than the easy one.
+**What we can contribute to the programme.** The call expects selected teams to be partners in building a Japanese model for deep-tech commercialization, not only recipients. Two things we can put in: a documented gate framework that decides go/no-go on numbers fixed in advance, which we already operate and would open to the programme; and a deliberately unglamorous case — a materials venture selling into conservative infrastructure operators, where the hard part is adoption rather than invention. If the model works only for software-shaped ventures it will not travel across Japanese deep tech, and we would rather be the awkward test case than the easy one.
 
 The sequence we are asking to be judged on is technical validation, then commercial validation, then — only if both hold — additional domestic supply obtained without additional extraction. **SRI is therefore not being asked to validate a market-size story. We are asking it to help us kill or validate the assumptions that decide whether this can become a globally deployable resource-recovery business. By February 2027, we intend to know whether that proposition survives real wastewater, industrial salinity, continuous operation and customer economics.**
 
