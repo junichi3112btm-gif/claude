@@ -74,6 +74,8 @@ Our intent is not a Japan-only wastewater business. We aim for a resource-recove
 
 **Competition, including doing nothing.** Iofina is a potential competitor if it moves into lower concentrations, and a potential partner because PhaseShift could work on water its plants have already stripped. Other alternatives are the incumbent Japanese processes, the closest patent family, and above all disposal: today the operator can simply inject the water at USD 0.60–1.25/bbl, and at about USD 74/kg iodine, iodine value equals disposal cost only at roughly 50–105 ppm, which is why a dedicated plant is difficult to justify below that range. Our leading commercial hypothesis is therefore a low-CAPEX retrofit owned by the water operator; milestone A2 tests this rather than assuming it.
 
+**Why we believe it.** The economics of the band are arithmetic rather than opinion; the water is already aggregated, with one operator alone reporting 60 disposal facilities and 1.2 million bbl/day of capacity; and one Japanese design site (about 13,000 bbl/day) gives a comparable flow-rate reference for initial US skid sizing, though process compatibility still requires validation.
+
 > **What would change our mind — two questions decide the North American case.**
 > **1. Does the target water exist at meaningful volume?** Our central assumption is 20–40 ppm streams at 5,000+ bbl/day at aggregation points, and it is unproven. Oklahoma's commercial producing formation has been reported at 300–350 mg/L, showing that richer water exists but not that thin water is collected anywhere. If the target streams do not exist, the answer is No-Go.
 > **2. Does the polymer survive above 100,000 mg/L TDS?** Untested. If it fails under that salinity, US produced water is closed to us.
