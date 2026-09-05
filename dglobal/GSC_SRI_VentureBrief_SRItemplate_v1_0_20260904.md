@@ -44,7 +44,7 @@ Assumptions: the published plant is representative; discharge sits in the 7–12
 | Test condition | Conventional polymer (PVP) | PhaseShift agent | Metric |
 | :-- | :-- | :-- | :-- |
 | Iodine in hexane | 73.9% | **91.4%** | capture |
-| Pure water, 7 ppm (two conditions) | not measured | **96.8% / 97.2%** | capture |
+| Pure water, 7 ppm | not measured | **96.8%** | capture |
 | Model brine wastewater, 7 ppm | not measured | **below detection limit** | capture |
 | Reuse, second cycle | not measured | **79.4%** | capture; dose not recorded, cause unresolved |
 
